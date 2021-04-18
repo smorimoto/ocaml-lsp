@@ -206,7 +206,8 @@ end
 
 let%expect_test "ent to end run of lsp tests" =
   test End_to_end_client.run End_to_end_server.run;
-  [%expect{|
+  [%expect
+    {|
     client: waiting for initialization
     server: initializing server
     server: returning initialization result
